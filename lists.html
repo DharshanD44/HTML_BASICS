@@ -4,7 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lists</title>
-	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<style type="text/css">
+		.lis
+		{
+			display: flex;
+		}
+		.li1
+		{
+			align-self: stretch;
+		}
+		#lirm
+		{
+			margin-left: 50px;
+		}
+	</style>
 </head>
 <body>
 	<div class="lis">
@@ -46,14 +59,17 @@
 	<!--Ordered list with style=Roman(I,II,III,IV)...etc-->
 	<ol type="I" style="font-size:30px">
 		<h2>Web Technologies</h2>
+		<div id="lirm">
 		<li>HTML</li>
 		<li>CSS</li>
 		<li>JAVASCRIPT</li>
 		<li>ANGULAR JS</li>
 		<li>WORD PRESS</li>
+		</div>
 	</ol>
 	<hr>
 
+	<!--Unordered list with style=Square-->
 	<ul type="square" style="font-size:30px">
 		<h2>Programming Languages</h2>
 		<li>JAVA</li>
@@ -63,6 +79,16 @@
 		<li>C++</li>
 	</ul>
 	</div>
+	<dl style="font-size:30px">
+		<b><dt>Data Title</dt></b>
+		<dd>-Data definition</dd>
+		<b><dt>HTML</dt></b>
+		<dd>-HTML is the standard markup language for Web pages.With HTML you can create your own Website.</dd>
+		<b><dt>CSS</dt></b>
+		<dd>-CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.</dd>
+		<b><dt>JAVASCRIPT</dt></b>
+		<dd>-JavaScript is a programming language used to create dynamic content for websites. It achieves this by adding new HTML elements while modifying existing ones</dd>
+	</dl>
 
 </body>
 </html>
